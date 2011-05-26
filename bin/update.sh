@@ -82,6 +82,9 @@ install_git peanutFormPlugin git://github.com/pocky/peanutFormPlugin.git master
 # peanutSeoPlugin
 install_git peanutSeoPlugin git://github.com/pocky/peanutSeoPlugin.git master
 
+# peanutActuPlugin
+install_git peanutActuPlugin git://github.com/pocky/peanutActuPlugin.git master
+
 cd ../..
 
 

@@ -28,6 +28,7 @@ class ProjectConfiguration extends sfProjectConfiguration
         'sfCKEditorPlugin',
         'peanutCorporatePlugin',
         'peanutFormPlugin',
+        'peanutActuPlugin',
         'peanutSeoPlugin'
     ));
     
