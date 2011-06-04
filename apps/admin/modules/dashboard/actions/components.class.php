@@ -18,6 +18,9 @@ class dashboardComponents extends sfComponents
     
     $users = Doctrine_Core::getTable('sfGuardUser')->getUsers();   
     $this->users = $users->fetchArray();
+    
+    $actus = Doctrine_Core::getTable('peanutActu')->getActus();
+    $this->actus = $actus->fetchArray();
   }
   
   public function executeUsers(sfWebRequest $request)
@@ -71,6 +74,12 @@ class dashboardComponents extends sfComponents
       return sfView::NONE;
     }
     
+  }
+  
+  public function executeActus(sfWebRequest $request)
+  {
+    $actus = Doctrine_Core::getTable('peanutActu')->getLastActus(5);
+    $this->actus = $actus->execute();
   }
   
   
