@@ -19,5 +19,8 @@
     <li>
       <a href="<?php echo url_for('settings', array('action' => 'seo')); ?>" title="<?php echo __('Link to', null, 'peanutCorporate') ?>"><?php echo __('Your SEO'); ?></a>
     </li>
+    <li>
+      <a href="<?php echo url_for('settings', array('action' => 'actu')); ?>" title="<?php echo __('Link to', null, 'peanutCorporate') ?>"><?php echo __('Actualities settings'); ?></a>
+    </li>
   </ul>
 </nav>

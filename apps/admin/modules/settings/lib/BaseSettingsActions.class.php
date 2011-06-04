@@ -80,4 +80,24 @@ class BaseSettingsActions extends sfActions
 
     }
   }
+  
+  public function executeActu(sfWebRequest $request)
+  {
+    $this->form = new actuSettingsForm();
+    
+    if($request->isMethod('post'))
+    { 
+      $this->form->bind($request->getParameter('settings'));
+      
+      if($this->form->isValid())
+      {
+        
+        foreach($this->form->getValues() as $name => $value)
+        {
+          peanutConfig::set($name, $value);
+        }
+        
+      }
+    }
+  }
 }

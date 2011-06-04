@@ -8,4 +8,8 @@
     <p><span><?php echo count($items) ?></span> <?php echo __('Published items') ?></p>
   </section>
   
+  <section class="box item">
+    <p><span><?php echo count($actus) ?></span> <?php echo __('Published actualities') ?></p>
+  </section>
+  
 </section>

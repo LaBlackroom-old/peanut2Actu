@@ -252,6 +252,30 @@
         <source>Your meta language</source>
         <target>La langue de votre site</target>
       </trans-unit>
+      <trans-unit>
+        <source>Published actualities</source>
+        <target>Articles publiés</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Last actualities</source>
+        <target>Les dernières actualités</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Actualities settings</source>
+        <target>Gestion des actualités</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Max last items</source>
+        <target>Nombre d'actualités affichées</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Max actu per page</source>
+        <target>Nombre d'actualités par page</target>
+      </trans-unit>
+      <trans-unit>
+        <source>This is your actualities settings, they are used for the frontend application.</source>
+        <target>Voici les paramètres de gestion de vos actualités, ils sont utilisés pour l'affiche du site publique.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
