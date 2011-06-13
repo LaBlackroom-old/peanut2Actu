@@ -17,6 +17,16 @@ jQuery(document).ready(function() {
     resizeAside();
     resizeFieldsetContent();
   });
+  
+  jQuery('.sf_admin_form_field_peanutSeo_title').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_title', 195);
+  })
+  
+  jQuery('.sf_admin_form_field_peanutSeo_description').keyup(function(){
+    limitChars('.sf_admin_form_field_peanutSeo_description', 255);
+  })
+  
+  xfn();
 
 });
 
@@ -125,5 +135,29 @@ function displaySubforms()
   
   jQuery('.sf_admin_form_row label').click(function() {
     jQuery(this).siblings('div.content').children('div.embedForm').toggle('slow');
+  });
+}
+
+function limitChars(containerDiv, limit)
+{
+  var input = jQuery(containerDiv).children('input');
+  var text = input.val();
+  var length = text.length;
+  
+  jQuery(containerDiv).children('.count').children('.counter').html((limit - length));
+}
+
+function xfn()
+{
+  if(jQuery('input#peanut_link_peanutXfn_me').is(':checked')) {
+    jQuery('.sf_admin_form_field_peanutXfn :input:not(input#peanut_link_peanutXfn_me)').attr('disabled', 'disabled');
+  }
+    
+  jQuery('input#peanut_link_peanutXfn_me').click(function() {
+    if(jQuery('input#peanut_link_peanutXfn_me').is(':checked')) {
+      jQuery('.sf_admin_form_field_peanutXfn :input:not(input#peanut_link_peanutXfn_me)').attr('disabled', 'disabled');
+    } else {
+      jQuery('.sf_admin_form_field_peanutXfn :input').removeAttr('disabled');
+    }
   });
 }
