@@ -14,7 +14,7 @@
       </trans-unit>
       <trans-unit>
         <source>functionnalities</source>
-        <target>fonctionnalités</target>
+        <target>fonctionnalités</target>f
       </trans-unit>
       <trans-unit>
         <source>Manage users</source>
@@ -254,7 +254,7 @@
       </trans-unit>
       <trans-unit>
         <source>Published actualities</source>
-        <target>Articles publiés</target>
+        <target>Actualités publiées</target>
       </trans-unit>
       <trans-unit>
         <source>Last actualities</source>
